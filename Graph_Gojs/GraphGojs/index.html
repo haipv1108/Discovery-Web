@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive Force Directed Layout</title>
+<meta name="description" content="A continuously operating ForceDirectedLayout lets the user push and pull nodes around." />
+<!-- Copyright 1998-2017 by Northwoods Software Corporation. -->
+<meta charset="UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/jquery32.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/go.js"></script>
+<script src="js/graph_data.js"></script>
+<script src="js/draw_graph.js"></script>
+
+</head>
+<body class="container">
+<div id="sample">
+  <!-- <div id="myDiagramDiv" style="background-color: whitesmoke; border: solid 1px black; width: 100%; height: 700px"></div>
+  <p id="property_content">
+  </p>
+  <p>
+    The graph is exactly the same as the <a href="conceptMap.html">Concept Map</a> sample.
+    But the node template is different, and the layout is different.
+  </p> -->
+  <div id="myDiagramDiv" style="border: solid 1px black; background: white; width: 100%; height: 600px"></div>
+  Click on a node to show distances from that node to each other node.
+  Click on a second node to show a shortest path from the first node to the second node.
+  (Note that there might not be any path between the nodes.)
+  <p>
+  Clicking on a third node will de-select the first two.
+  <p>
+  Here is a list of all paths between the first and second selected nodes.
+  Select a path to highlight it in the diagram.
+  </p>
+  <div id="myPaths" style="min-width:100px" size="10"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Discovery Web</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/discovery_script.js"></script>
+	<script type="text/javascript" src="js/kgram_script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row col-md-6 col-md-offset-3 jumbotron">
+			<div class="form-inline text-center">
+				<div class="form-group">
+					<label for="uri" class="col-md-2 sr-only">URI:</label>
+					<input type="text" id="txt_uri" class="form-control" autofocus placeholder="URI">
+				</div>
+				<button type="button" class="btn btn-primary btn-md" onclick="EXSearch()">EX Search</button>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<div class="row jumbotron">
+			<div class="form-inline">
+				<div class="col-md-5">
+					<div class="form-group">
+						<label for="uri" class="sr-only">URI1</label>
+						<input type="text" id="txt_uri_1" class="form-control" autofocus placeholder="URI1">
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="form-group">
+						<label for="uri" class="sr-only">URI1</label>
+						<input type="text" id="txt_uri_2" class="form-control" autofocus placeholder="URI2">
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-primary btn-md" onclick="KGramSearch()">Kgram Search</button>	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="results">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
